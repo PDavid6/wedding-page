@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    background-image: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+    }
+/* Style of the menu & header mainpage*/
+header {
+    width: 100%; 
+    height: 100vh;
+    text-align: center;
+    background-image: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* General styles*/
+
+.titles {
+    display: block;
+   text-align: center;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   font-size: 3.5rem;
+   padding: 0.9rem;
+}
+/*font styles*/
+.great-vibes-style {
+    font-family: 'Great Vibes', cursive;
+}
+.muli-style {
+    font-family:'Muli', sans-serif;
+}
+.libre-style {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.buttoncontainer {
+    width: 100%; 
+    height: auto;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;   
+
+}
+.menubuttons {
+    color: whitesmoke; 
+    font-size: 1.3rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.menubuttons:hover {
+    cursor: pointer;
+    font-size: 1.7rem;
+    background-color:rgba(255,255,255, .3) ;
+    transition: .40s ease-in-out;
+}
+.mainhead {
+    width: 60%;  
+    background-color: rgba(0, 0, 0, .6);
+    color: whitesmoke;
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    letter-spacing: 0.15rem;
+    color: rgb(210, 186, 135);
+    font-style: italic;
+    margin: 1rem;
+}
+#married-text, #date {
+    margin: 1rem auto;
+    padding: 1.5rem;
+    text-transform: uppercase; 
+    font-size: 1.4rem;  
+    letter-spacing: .15rem;
+}
+
+#date::before, #date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 0.12rem;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+}
+#married-text::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: .12rem;
+    width: 30%;
+    margin: 1rem auto;
+
+}
+
+@media (min-width: 768px){
+    .mainhead {
+    position: relative;
+    top: 20%;
+    width: 50vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+    color:white;
+    margin: 3rem auto;    
+}
+.buttoncontainer {
+    width: 100%; 
+    height: 10vh;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menubuttons {
+
+    width: 16.6%;
+    height:100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+}
+
+/*Locations menu style*/
+.locations {
+   position: relative;
+   width: 100%;
+   height: auto;
+   margin-bottom: 5%;
+}
+.hasabok {
+    display: block;
+    text-align: center;
+    margin: auto 5vw;
+    width: 90vw;
+    height: auto;
+}
+img {
+    width: 15vw;
+    height: auto;
+    margin: 1rem auto;
+}
+.hasabok h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+.hasabok p {
+    position: relative;
+    margin-bottom: 2.3rem;
+    font-size: 1.3rem;
+    font-family: 'Muli', sans-serif;
+}
+
+.hasabok::after {
+    display: block;
+    content:"";
+    background-color: rgba(0, 0, 0, .8);
+    width: 30vw;
+    height: 0.2rem;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 1rem;
+    
+
+}
+ @media (min-width: 768px) {
+     .locations {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+     }
+     .hasabok {
+         display: block;
+         position: relative;
+         margin: 10px;
+     }
+     .hasabok::after {
+         display: none;
+     }
+     img {
+         width: 10vw;
+         height: auto;
+     }
+
+}
+
+/*program style menu*/
+
+.program {
+    width: 100%;
+    color: #d2ba87;
+    background-color: rgba(0, 0, 0, .6);
+    padding-bottom: 10px;
+
+}
+#programcontainer {
+    display: block;
+    margin: 3% 40%;
+    font-size: 1.1rem;
+}
+blockquote {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+}
+ul {
+    display: block;
+    list-style-type: none;
+}
+li {
+    margin: 1rem auto;
+}
+
+/* Gift part style*/
+.gifts {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align:center;
+}
+.gifts p {
+    font-size: 1.15rem;
+    margin: 2rem auto;
+}
+
+/* Q&A formatting and styling*/
+
+.questions {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    display: block;
+    color: #d2ba87;
+}
+
+#wrapper {
+   width: 100%;
+   display: block;
+   font-size: 1.2rem;
+  margin: 3rem 3rem;
+  margin-bottom: 1rem;
+   letter-spacing: 0.05rem;
+   padding: 0.3rem;
+}
+
+.object {
+    width: 100%;
+    display: block;
+}
+.q  {
+    margin-bottom: 0.5rem;
+    font-weight: 650;   
+}
+.a {
+    margin-bottom: 2rem;
+}
+.temakor {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+
+a {
+    text-decoration: none;
+    color:#bd806e;
+}
+a:hover {
+    color: #eda087;
+    transition: color .15s ease-in-out;
+}
+.object::after {
+    display: block;
+    content: "";
+    width: 50vw;
+    height: 0.2rem;
+    background-color: #d2ba87;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media(min-width: 768px) {
+    #wrapper {
+    width: 100%;
+    margin: 2rem auto;
+    margin-bottom: 1rem;
+     
+}
+.object::after {
+    display: none;
+}
+.object {
+        width: 30%;
+        margin: 1rem 1rem;
+        padding: 1.5rem;
+        display: inline-block;
+        text-align: left;
+        vertical-align: top;
+    }
+}
+
+
+/* Contact page style*/
+.contactpage {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contactpage p {
+    letter-spacing: 0.08rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.contactcontainer {
+margin: 3vw auto;
+
+}
+
+/*Footer style*/
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: dimgray;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    
+    
+}
+footer p {
+   position: relative;
+    top: 1.5rem;
+    font-size: 1.1rem;
+}
